@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Leaflet.PolylineMeasure</title>
+<script src='./leaflet/Js/jquery.min.js'></script>
+<script src='./leaflet/Js/mapbox.js'></script>
+<link href='./leaflet/Css/mapbox.css' rel='stylesheet' />
+<script src='./leaflet/Js/markers.js'></script>
+
+<link href='./leaflet/Css/leaflet.draw.css' rel='stylesheet' />
+<script src='./leaflet/Js/leaflet.draw.js'></script>
+<script src='./leaflet/Js/turf.min.js'></script>
+
+<style>
+  body {margin:0; padding:0; }
+  #map{ position:absolute; top:0; bottom:0; width:100%; }
+  .mapbox-logo{
+      display: none !important;
+  }
+  .leaflet-draw-section{float: left;}
+  .leaflet-draw-toolbar.leaflet-bar.leaflet-draw-toolbar-top{float: left;}
+  .leaflet-draw-toolbar.leaflet-bar.leaflet-draw-toolbar-top a{float:left; margin-right:5px; }
+  .leaflet-draw-toolbar.leaflet-bar{float: left; margin-top:0px; margin-left: 10px;}
+  .leaflet-draw-toolbar.leaflet-bar a{float: left;}
+  ul.leaflet-draw-actions{margin-top: 46px;}
+
+.leaflet-bar a, .leaflet-control-layers-toggle, .leaflet-popup-close-button, .map-tooltip.closable .close, .mapbox-button-icon::before, .mapbox-icon{width:40px; height: 40px;}
+  .leaflet-container.dark .map-tooltip .close, .leaflet-control-attribution::after, .leaflet-control-layers-toggle, .leaflet-control-zoom-in, .leaflet-control-zoom-out, .leaflet-popup-close-button, .map-tooltip .close, .mapbox-icon{ background-size: 50px 500px;}
+  .mapbox-icon.mapbox-icon-geocoder, .mapbox-icon.mapbox-icon-geocoder::before {
+    background-position: -5px -304px;
+}
+
+.leaflet-control-mapbox-geocoder-results {
+    border-radius: 0 0 3px 3px;
+    left: 41px;
+    position: absolute;
+    top: 39px;
+    width: 180px;
+}
+
+.leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-wrap {
+    background: #fff none repeat scroll 0 0;
+    border:none;
+    border-radius: 0 3px 3px 0;
+    height: 40px;
+    left: 41px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 100ms ease 0s;
+    width: 0;
+}
+
+.leaflet-control-mapbox-geocoder .leaflet-control-mapbox-geocoder-form input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    height: 40px;
+    outline: 0 none;
+    padding: 0 0 0 10px;
+    width: 200px;
+    font-size: 15px;
+}
+.leaflet-control-mapbox-geocoder-results a{width: 100%;}
+
+.leaflet-bar .leaflet-control-zoom-out {
+    background-position: -4px -54px;
+}
+
+.leaflet-bar .leaflet-control-zoom-in {
+    background-position: -4px -4px;
+}
+</style>
+
+</head>
+<body>
+
+<div id='map'></div>
+<script src='./leaflet/Js/main.js'></script>
+
+</body>
+</html>
+
+
+
